@@ -9,7 +9,7 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Install additional packages
         run: sudo apt-get update -y && sudo apt-get install -y maven default-jdk && sudo pip install -U sphinx sphinx_rtd_theme 
       - name: Make documentation
